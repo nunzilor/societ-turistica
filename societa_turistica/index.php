@@ -23,7 +23,7 @@
 	<h2>Home Page</h2>
 </div>
 <div class="content">
-  	<!-- notification message -->
+  	<!-- utenti loggati -->
   	<?php if (isset($_SESSION['success'])) : ?>
       <div class="error success" >
       	<h3>
