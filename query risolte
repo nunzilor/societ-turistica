@@ -1,0 +1,5 @@
+Ho risolto le seguenti query :
+a)	select luogo,data from visita order by luogo, data;
+b)	SELECT * FROM guida INNER JOIN competenze ON guida.id_guida = competenze.id_guida WHERE lingua_conosciuta = fra AND liv_conoscenza = avanzato;
+c)	SELECT visitatori FROM visitatori,membri, gruppi, eventi WHERE visitatori.id_utente = gruppi.id_utente AND YEAR_MONTH(data)= 2016 GROUP BY id_visitatori
+D ) SELECT * FROM visitatori,membri, gruppi, eventi WHERE id_visitatore = membri.id_visitatore AND membri.id.gruppi = gruppi.id.gruppi AND gruppi.id_evento = eventi.id_evento AND lingua <> lingua_madre;
