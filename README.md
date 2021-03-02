@@ -5,3 +5,13 @@ l’utente si può interfacciare tramite un semplice browser da qualsiasi dispos
 una volta che il sito avrà superato la beta test verrà dotato di un url grazie al sistema dns che sostituirà l’indirizzo ip del webserver dotandolo di un vero e proprio nome. Es 8.8.8.8  www.google.it
 dove troveremo sia lato server (php,mysql,ecc..),  che lato client (js,html). Per la parte frontend (quella dove si interfaccerà l’utente) ho deciso di creare una pagina web html con il login e la registrazione per gli utenti, dove oltre ad inserire i loro dati ed immagazzinarli in un database potranno trovare a disposizione quelli riguardanti delle guide turistiche e degli itinerari. La parte backend e il flusso dei dati come scritto sopra sarà gestita da php e mysql che restituirà all’utente con delle chiamate web sulla porta 8080 del webserver e con l’ausilio delle query.
 Ho deciso di processare i dati del testo con uno schema e-r che scriverò qui di seguito :
+
+https://github.com/nunzilor/societ-turistica/blob/main/schemaer.drawio
+
+qui lo schema implementato in mariadb :
+
+https://github.com/nunzilor/societ-turistica/blob/main/Screenshot%202021-03-02%20175845.png
+
+e qui la login page :
+
+https://github.com/nunzilor/societ-turistica/blob/main/Screenshot%202021-03-02%20175648.png
