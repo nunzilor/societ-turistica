@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-// ciao questo è il mio codice var
+// ciao questo è il mio codice 
+// variabili
 $username = "";
 $email    = "";
 $errors = array(); 
@@ -26,13 +27,12 @@ if (isset($_POST['reg_user'])) {
 	array_push($errors, "The two passwords do not match");
   }
 
-  // first check the database to make sure 
-  // a user does not already exist with the same username and/or email
+  // assicurati che username ed email non sono stati gia stati utilizzati
   $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
   $result = mysqli_query($db, $user_check_query);
   $user = mysqli_fetch_assoc($result);
   
-  if ($user) { // if user exists
+  if ($user) { // se esiste
     if ($user['username'] === $username) {
       array_push($errors, "Username already exists");
     }
@@ -42,7 +42,7 @@ if (isset($_POST['reg_user'])) {
     }
   }
 
-  // Finally, register user if there are no errors in the form
+  // se non ci sono errori procediamo
   if (count($errors) == 0) {
   	$password = md5($password_1);//per motivi di sicurezza critta la pass con l'hash md5 prima di storarla nel db
 
