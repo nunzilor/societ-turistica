@@ -1,3 +1,6 @@
+risoluzione progetto :
+https://github.com/nunzilor/societ-turistica/blob/main/Simulazione_Informatica_Testo_2017.pdf
+
 # societ-turistica
 *analisi tecnica*
 Analizzando il testo e le linee guida descritte nella prova, in questo caso un società  operante nel settore del turismo, ho deciso di sviluppare un interfaccia web. 
