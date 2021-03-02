@@ -1,5 +1,5 @@
 # societ-turistica
-//analisi tecnica
+*analisi tecnica*
 Analizzando il testo e le linee guida descritte nella prova, in questo caso un società  operante nel settore del turismo, ho deciso di sviluppare un interfaccia web. 
 l’utente si può interfacciare tramite un semplice browser da qualsiasi dispositivo (smartphone, tablet, pc ) digitando nella barra della ricerca l’ip statico del webserver che nel nostro caso sarà una vps linux distribuzione debian con la suite apache che ci permetterà di avere a disposizione tutti i tools necessari per hostare il sito web .
 una volta che il sito avrà superato la beta test verrà dotato di un url grazie al sistema dns che sostituirà l’indirizzo ip del webserver dotandolo di un vero e proprio nome. Es 8.8.8.8  www.google.it
